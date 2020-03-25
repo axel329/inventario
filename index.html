@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Inventarios 2019</title>
+<link href="../Inventario/CSS/estilo.css" rel="stylesheet" type="text/css">
+<link href="../Inventario/CSS/estilo_menu.css" rel="stylesheet" type="text/css">
+<link href="../Inventario/CSS/iframe.css" rel="stylesheet" type="text/css">
+<!-- <link rel="shortcut icon" href="../Inventario/img/favicon.png" /> -->
+<!-- <link rel="icon" type="image/png" href="/../Inventario/img/favicon.ico" /> -->
+
+<meta name="viewport" content="initial-scale=1" />
+<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+
+<nav>
+
+    <ul>
+        <li><a title="Inicio" href="index.html">Buscar Sitio</a></li>
+        <!--<li><a title="Cargar Excel" href="../Inventario/excel/index.html">Cargar Excel</a></li>-->
+        <li><a title="Opcion 4" href="../Inventario/eliminar.html">Eliminar Sitio</a></li>
+        <li><a title="Opcion 3" href="../Inventario/backup/backup.php">Backup</a></li>
+    </ul>
+    </nav> 
+
+</br></br></br>
+</head>
+ 
+<body>
+
+        <form name='formulario' class="contact_form" id='formulario' method='post' action='generar.php' enctype="multipart/form-data">
+            <div>
+                <ul>
+                <li>
+                    <h2>Obtener Codigos de Barras</h2>
+                    <span class="required_notification">* Datos requeridos</span>
+                </li>
+ 
+ 
+            <li>
+                <label for="name">ID del Sitio:</label>
+                <input type='text' name='id' id='id' placeholder="Codigo del sitio" required>
+                <span class="form_hint">Formato correcto: "ID (s)"</span>
+            </li>
+            
+            <li align='center'>
+              
+             <button class="submit" type='submit' value='Enviar formulario'>Enviar</button>
+            <!--<button class="submit" type="button" value="Enviar formulario" id="enviar" name="enviar" onclick= "document.formulario.action = 'generar.php'; document.formulario.submit()" >Enviar Mensaje</button> -->  
+            <!--  <button class="submit" type="button" value="Eliminar" id="eliminar" name="eliminar" onclick= "document.formulario.action = 'eliminar.php'; document.formulario.submit()" >Eliminar Sitio</button>  -->   
+             <button class="submit" type='reset' value=' formulario'>Borrar Datos</button>    
+           
+            </li>
+          
+            </ul>
+        </form>
+
+
+        
+
+       
+
+</body>
+</html>

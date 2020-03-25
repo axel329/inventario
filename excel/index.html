@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head xmlns="http://www.w3.org/1999/xhtml">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Importar Excel</title>
+        <link rel="stylesheet" href="../CSS/estilo.css" type="text/css">
+        <link rel="stylesheet" href="../CSS/estilo_menu.css" type="text/css">
+    
+        <nav>
+
+                <ul>
+                    <li><a title="Inicio" href="../index.html">Buscar Sitio</a></li>
+                    <!--<li><a title="Cargar Excel" href="../excel/index.html">Cargar Excel</a></li>-->
+                    <li><a title="Opcion 4" href="../eliminar.html">Eliminar Sitio</a></li>
+                    <li><a title="Opcion 3" href="../backup/backup.php">Backup</a></li>
+                </ul>
+        </nav> 
+
+
+    </head>
+   </br>
+  </br>
+</br>
+    <body>
+        <form name='formulario' class="contact_form" id='formulario' method='post' action='../excel/leer.php' enctype="multipart/form-data">
+            <div>
+                <ul>
+                        <li>
+                            <h2>Importar Excel</h2>
+                            <span class="required_notification">* Datos requeridos</span>
+                        </li>
+        
+        
+                        <li>
+                            <label for="adjuntar archivo">Adjuntar archivo:</label>
+                            <input type='file' name='archivo' id='archivo' placeholder="carga tu boucher" required>
+                        </li>
+                        
+                        <li align='center'>
+                            <button class="submit" type='submit' value='Enviar formulario'>Enviar Mensaje</button>
+                            <button class="submit" type='reset' value='Reiniiar formulario'>Borrar Datos</button>
+                        </li>
+                </ul>
+            </div>
+        </form>
+    </body>
+</html>

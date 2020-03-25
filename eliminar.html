@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+     <meta http-equiv="Content-type" content="text/html"; charset="utf-8">
+     <title>Eliminar Sitios</title>
+     <link href="../Inventario/CSS/estilo.css" rel="stylesheet" type="text/css">
+     <link href="../Inventario/CSS/estilo_menu.css" rel="stylesheet" type="text/css">
+     <meta name="viewport" content="initial-scale=1" />
+<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+     
+     
+<nav>
+
+    <ul>
+        <li><a title="Inicio" href="index.html">Buscar Sitio</a></li>
+        <!--<li><a title="Cargar Excel" href="../Inventario/excel/index.html">Cargar Excel</a></li>-->
+        <li><a title="Opcion 4" href="../Inventario/eliminar.html">Eliminar Sitio</a></li>
+        <li><a title="Opcion 3" href="../Inventario/backup/backup.php">Backup</a></li>
+    </ul>
+</nav> 
+      </br></br></br>
+</head>
+<body>
+
+      <form method="POST" action="eliminar.php" class="contact_form" id="miFormulario">
+       
+          <div>
+              <ul>
+
+                    <li>
+                        <h2>Eliminar Sitio</h2>
+                        <span class="required_notification">* Datos requeridos</span>
+                    </li>
+                
+                    <!-- <label>Codigo del sitio a Eliminar:</label>-->
+                    <!-- <input type="text" REQUIRED name="id" size="20" class="input">-->
+
+                    <li>
+                        <label for="name">Codigo del sitio a Eliminar:</label>
+                        <input type='text' name='id' id='id' placeholder="Codigo del sitio" required>
+                        <span class="form_hint">Formato correcto: "ID (s)"</span>
+                    </li>
+
+                    <li align='center'>
+                    
+                        <button type="submit" value="Eliminar" name="B1" class="submit"> Eliminar Sitio</button>    
+                        <button  type="button" value="Volver de donde viniste!" onclick="location='index.html'" class="submit" >Volver</button>
+                  </li>
+            </ul>
+            </div>
+      </form>
+
+
+
+     <script type="text/javascript">
+       (function() {
+         var form = document.getElementById('miFormulario');
+         form.addEventListener('submit', function(event) {
+           // si es false entonces que no haga el submit
+           if (!confirm('Realmente desea eliminar?')) {
+             event.preventDefault();
+           }
+         }, false);
+       })();
+     </script>
+</body>
+</html>
