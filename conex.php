@@ -1,5 +1,5 @@
 <?php
-$mysqli=new mysqli ("localhost","root","Admin123-","inventario_tigoune");
+$mysqli=new mysqli ("localhost","root","","inventario");
 
 if(mysqli_connect_errno()){
 
